@@ -18,3 +18,11 @@ gem 'jbuilder', '1.0.2'
 group :doc do
   gem 'sdoc', '0.3.20', require: false
 end
+
+group :production do
+	# for heroku deployment
+	# Note also the addition of the rails_12factor gem, 
+	# which is used by Heroku to serve static assets such as images and stylesheets.
+	gem 'pg', '0.15.1'
+	gem 'rails_12factor', '0.0.2'
+end
