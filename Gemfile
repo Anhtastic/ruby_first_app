@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.2.7'
 #ruby-gemset=railstutorial_rails_4_0
 
 gem 'rails', '4.0.8'
@@ -20,9 +20,6 @@ group :doc do
 end
 
 group :production do
-	# for heroku deployment
-	# Note also the addition of the rails_12factor gem, 
-	# which is used by Heroku to serve static assets such as images and stylesheets.
-	gem 'pg', '0.15.1'
-	gem 'rails_12factor', '0.0.2'
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
 end
